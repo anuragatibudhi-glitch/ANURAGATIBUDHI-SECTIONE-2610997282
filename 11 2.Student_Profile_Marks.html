@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile & Marks</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .outer { width: 650px; margin: 30px auto; }
+        .inner { width: 100%; }
+        th { background-color: #dcecf7; }
+    </style>
+</head>
+<body>
+
+    <table class="outer" border="1" cellpadding="10" cellspacing="2">
+        <tr>
+            <th colspan="3">Student Profile &amp; Marks</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Student Information</th>
+            <th>Name</th>
+            <td>Aarav Sharma</td>
+        </tr>
+        <tr>
+            <th>Roll Number</th>
+            <td>101</td>
+        </tr>
+        <tr>
+            <th>Course</th>
+            <td>BCA with AI &amp; ML</td>
+        </tr>
+        <tr>
+            <th>Details</th>
+            <td colspan="2">
+                <!-- Nested table inside the Details cell -->
+                <table class="inner" border="1" cellpadding="8" cellspacing="2">
+                    <tr>
+                        <th colspan="3">Subject Marks</th>
+                    </tr>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                        <th>Maximum Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>85</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Maths</td>
+                        <td>90</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>78</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <th>253</th>
+                        <th>300</th>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <th>Result</th>
+            <td colspan="2">Pass</td>
+        </tr>
+    </table>
+
+</body>
+</html>
