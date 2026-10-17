@@ -1,82 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Employee Salary Slip</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        h1 { text-align: center; }
-        .outer { width: 700px; margin: auto; }
-        .inner { width: 100%; }
-        th { background-color: #e2eef8; }
-        .net { background-color: #d8f2dd; font-weight: bold; }
-    </style>
-</head>
-<body>
-
-    <h1>Employee Salary Slip</h1>
-
-    <table class="outer" border="1" cellpadding="10" cellspacing="2">
-        <tr>
-            <th>Employee Name</th>
-            <td>Aarav Sharma</td>
-            <th>Employee ID</th>
-            <td>EMP101</td>
-        </tr>
-        <tr>
-            <th>Department</th>
-            <td>IT</td>
-            <th>Month</th>
-            <td>September 2026</td>
-        </tr>
-
-        <tr>
-            <td colspan="4">
-                <!-- This table is inside a cell of the outer table. -->
-                <table class="inner" border="1" cellpadding="8" cellspacing="2">
-                    <tr>
-                        <th colspan="2">Earnings</th>
-                        <th colspan="2">Deductions</th>
-                    </tr>
-                    <tr>
-                        <th>Details</th>
-                        <th>Amount</th>
-                        <th>Details</th>
-                        <th>Amount</th>
-                    </tr>
-                    <tr>
-                        <td>Basic Pay</td>
-                        <td align="right">₹25,000</td>
-                        <td>Provident Fund</td>
-                        <td align="right">₹2,000</td>
-                    </tr>
-                    <tr>
-                        <td>House Rent Allowance</td>
-                        <td align="right">₹9,000</td>
-                        <td>Income Tax</td>
-                        <td align="right">₹2,300</td>
-                    </tr>
-                    <tr>
-                        <td>Other Allowance</td>
-                        <td align="right">₹5,000</td>
-                        <td>Other Deduction</td>
-                        <td align="right">₹500</td>
-                    </tr>
-                    <tr>
-                        <th>Total Earnings</th>
-                        <th>₹39,000</th>
-                        <th>Total Deductions</th>
-                        <th>₹4,800</th>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-
-        <tr class="net">
-            <td colspan="2">Net Salary</td>
-            <td colspan="2" align="center">₹34,200</td>
-        </tr>
-    </table>
-
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Employee Salary Slip</title>
+    </head>
+    <body>
+        <h1>Employee Salary Slip</h1>
+        <table border="1" cellpadding="10" cellspacing="2">
+            <tr>
+                <th>Employee Name</th>
+                <td>Aarav Sharma</td>
+                <th>Employee ID</th>
+                <td>EMP101</td>
+            </tr>
+            <tr>
+                <th>Department</th>
+                <td>IT</td>
+                <th>Month</th>
+                <td>September 2026</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <table border="1" cellpadding="8" cellspacing="2">
+                        <tr>
+                            <th colspan="2">Earnings</th>
+                            <th colspan="2">Deductions</th>
+                        </tr>
+                        <tr>
+                            <th>Details</th>
+                            <th>Amount</th>
+                            <th>Details</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td>Basic Pay</td>
+                            <td>₹25,000</td>
+                            <td>Provident Fund</td>
+                            <td>₹2,000</td>
+                        </tr>
+                        <tr>
+                            <td>House Rent Allowance</td>
+                            <td>₹9,000</td>
+                            <td>Income Tax</td>
+                            <td>₹2,300</td>
+                        </tr>
+                        <tr>
+                            <td>Other Allowance</td>
+                            <td>₹5,000</td>
+                            <td>Other Deduction</td>
+                            <td>₹500</td>
+                        </tr>
+                        <tr>
+                            <th>Total Earnings</th>
+                            <th>₹39,000</th>
+                            <th>Total Deductions</th>
+                            <th>₹4,800</th>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Net Salary</td>
+                <td colspan="2">₹34,200</td>
+            </tr>
+        </table>
+    </body>
 </html>

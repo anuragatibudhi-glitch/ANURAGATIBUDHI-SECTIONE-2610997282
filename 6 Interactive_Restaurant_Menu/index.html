@@ -1,43 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Restaurant Menu</title>
-  <link rel="stylesheet" href="style.css">
+<title>Interactive Restaurant Menu</title>
 </head>
 <body>
-  <main>
-    <h1>Interactive Restaurant Menu</h1>
-    <p>Click a food item in the picture to open its own information page. Click the empty background for other specials.</p>
-
-    <div class="menu-scroll">
-      <img src="images/menu-map.svg" usemap="#food-map" width="800" height="500"
-           alt="Illustrated menu showing pizza, burger, fries, sandwich, cake, and a menu card">
-    </div>
-
-    <map name="food-map" id="food-map">
-      <area shape="circle" coords="145,132,78" href="pizza.html" alt="Pizza" target="_blank" rel="noopener noreferrer">
-      <area shape="circle" coords="400,132,78" href="burger.html" alt="Burger" target="_blank" rel="noopener noreferrer">
-      <area shape="rect" coords="580,48,760,215" href="fries.html" alt="French fries" target="_blank" rel="noopener noreferrer">
-      <area shape="rect" coords="575,288,760,455" href="menu-card.html" alt="Menu card" target="_blank" rel="noopener noreferrer">
-      <area shape="poly" coords="50,316,255,316,153,455" href="sandwich.html" alt="Sandwich" target="_blank" rel="noopener noreferrer">
-      <area shape="poly" coords="300,315,515,315,408,455" href="cake.html" alt="Cake slice" target="_blank" rel="noopener noreferrer">
-      <area shape="default" href="other.html" alt="Other restaurant specials" target="_blank" rel="noopener noreferrer">
-    </map>
-
-    <h2>Text links to every item</h2>
-    <p>These links also help if you cannot use the picture:</p>
-    <ul>
-      <li><a href="pizza.html">Pizza</a></li>
-      <li><a href="burger.html">Burger</a></li>
-      <li><a href="fries.html">French Fries</a></li>
-      <li><a href="sandwich.html">Sandwich</a></li>
-      <li><a href="cake.html">Cake Slice</a></li>
-      <li><a href="menu-card.html">Full Menu Card</a></li>
-      <li><a href="other.html">Other Specials</a></li>
-    </ul>
-    <p class="tip">The picture stays 800 × 500 pixels wide so the image-map coordinates match the food items. On a narrow screen, scroll the picture sideways.</p>
-  </main>
+<h1>Interactive Restaurant Menu</h1>
+<p>Welcome to our restaurant. Click any food picture to see its details.</p>
+<table border="1" cellpadding="8">
+<tr><th>Photo</th><th>Food</th><th>Price</th></tr>
+<tr><td><a href="pizza.html"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&auto=format&fit=crop" width="180" alt="Pizza"></a></td><td><a href="pizza.html">Pizza</a></td><td>₹249</td></tr>
+<tr><td><a href="burger.html"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop" width="180" alt="Burger"></a></td><td><a href="burger.html">Burger</a></td><td>₹149</td></tr>
+<tr><td><a href="fries.html"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&auto=format&fit=crop" width="180" alt="French Fries"></a></td><td><a href="fries.html">French Fries</a></td><td>₹99</td></tr>
+<tr><td><a href="sandwich.html"><img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500&auto=format&fit=crop" width="180" alt="Sandwich"></a></td><td><a href="sandwich.html">Sandwich</a></td><td>₹129</td></tr>
+<tr><td><a href="cake.html"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&auto=format&fit=crop" width="180" alt="Chocolate Cake"></a></td><td><a href="cake.html">Chocolate Cake</a></td><td>₹119</td></tr>
+</table>
+<p>Photos are loaded from Unsplash, so internet is needed.</p>
+<p><a href="index.html">Home</a> | <a href="menu-card.html">Full Menu</a> | <a href="other.html">Other Specials</a></p>
 </body>
 </html>

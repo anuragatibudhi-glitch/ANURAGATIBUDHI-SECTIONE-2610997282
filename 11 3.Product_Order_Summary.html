@@ -1,73 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Product Order Summary</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .outer { width: 650px; margin: 30px auto; }
-        .inner { width: 100%; }
-        th { background-color: #e2ecf7; }
-        .total { background-color: #d9f2dd; font-weight: bold; }
-    </style>
-</head>
-<body>
-
-    <table class="outer" border="1" cellpadding="10" cellspacing="2">
-        <tr>
-            <th colspan="3">Product Order Summary</th>
-        </tr>
-        <tr>
-            <th rowspan="3">Order Details</th>
-            <th>Order ID</th>
-            <td>ORD101</td>
-        </tr>
-        <tr>
-            <th>Customer</th>
-            <td>Anurag</td>
-        </tr>
-        <tr>
-            <th>Order Date</th>
-            <td>01-10-2026</td>
-        </tr>
-
-        <tr>
-            <th>Order Items</th>
-            <td colspan="2">
-                <!-- Nested table inside the Order Items cell -->
-                <table class="inner" border="1" cellpadding="8" cellspacing="2">
-                    <tr>
-                        <th>Product</th>
-                        <th>Quantity</th>
-                        <th>Unit Price</th>
-                        <th>Amount</th>
-                    </tr>
-                    <tr>
-                        <td>Laptop</td>
-                        <td align="center">1</td>
-                        <td align="right">₹45,000</td>
-                        <td align="right">₹45,000</td>
-                    </tr>
-                    <tr>
-                        <th colspan="3">Items Subtotal</th>
-                        <th>₹45,000</th>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <th>Shipping</th>
-            <td colspan="2" align="right">₹1,200</td>
-        </tr>
-        <tr>
-            <th>Tax</th>
-            <td colspan="2" align="right">₹2,500</td>
-        </tr>
-        <tr class="total">
-            <th>Grand Total</th>
-            <td colspan="2" align="right">₹48,700</td>
-        </tr>
-    </table>
-
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Product Order Summary</title>
+    </head>
+    <body>
+        <table border="1" cellpadding="10" cellspacing="2">
+            <tr>
+                <th colspan="3">Product Order Summary</th>
+            </tr>
+            <tr>
+                <th rowspan="3">Order Details</th>
+                <th>Order ID</th>
+                <td>ORD101</td>
+            </tr>
+            <tr>
+                <th>Customer</th>
+                <td>Anurag</td>
+            </tr>
+            <tr>
+                <th>Order Date</th>
+                <td>01-10-2026</td>
+            </tr>
+            <tr>
+                <th>Order Items</th>
+                <td colspan="2">
+                    <table border="1" cellpadding="8" cellspacing="2">
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Unit Price</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td>Laptop</td>
+                            <td>1</td>
+                            <td>₹45,000</td>
+                            <td>₹45,000</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Items Subtotal</th>
+                            <th>₹45,000</th>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <th>Shipping</th>
+                <td colspan="2">₹1,200</td>
+            </tr>
+            <tr>
+                <th>Tax</th>
+                <td colspan="2">₹2,500</td>
+            </tr>
+            <tr>
+                <th>Grand Total</th>
+                <td colspan="2">₹48,700</td>
+            </tr>
+        </table>
+    </body>
 </html>

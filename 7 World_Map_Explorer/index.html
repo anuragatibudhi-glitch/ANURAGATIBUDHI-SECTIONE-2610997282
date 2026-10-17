@@ -1,45 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>World Map Explorer</title>
-  <link rel="stylesheet" href="style.css">
+    <title>World Map Explorer</title>
 </head>
 <body>
-  <main>
+
     <h1>World Map Explorer</h1>
-    <p>Click a coloured country region to read about it. Click the ocean or any other part of the map to learn about Earth.</p>
+    <p>Click on a country in the map to learn about it.</p>
 
-    <div class="map-scroll">
-      <img src="images/world-map.svg" usemap="#world-map" width="900" height="500"
-           alt="Stylized world map with labelled clickable regions for the United States, Brazil, France, India, Japan, and Australia">
-    </div>
+    <img src="images/world-map.png" width="900" height="450"
+         alt="World Map" usemap="#worldmap">
 
-    <map name="world-map" id="world-map">
-      <area shape="circle" coords="190,172,35" href="https://en.wikipedia.org/wiki/United_States" alt="United States circular region" target="_blank" rel="noopener noreferrer">
-      <area shape="circle" coords="793,215,33" href="https://en.wikipedia.org/wiki/Japan" alt="Japan circular region" target="_blank" rel="noopener noreferrer">
-      <area shape="rect" coords="285,291,367,336" href="https://en.wikipedia.org/wiki/Brazil" alt="Brazil rectangular region" target="_blank" rel="noopener noreferrer">
-      <area shape="rect" coords="461,151,533,192" href="https://en.wikipedia.org/wiki/France" alt="France rectangular region" target="_blank" rel="noopener noreferrer">
-      <area shape="poly" coords="619,233,671,235,682,259,649,290,624,270" href="https://en.wikipedia.org/wiki/India" alt="India polygon region" target="_blank" rel="noopener noreferrer">
-      <area shape="poly" coords="724,354,765,342,820,365,812,402,759,415,723,392" href="https://en.wikipedia.org/wiki/Australia" alt="Australia polygon region" target="_blank" rel="noopener noreferrer">
-      <area shape="default" href="https://en.wikipedia.org/wiki/Earth" alt="Other areas of the world map" target="_blank" rel="noopener noreferrer">
+    <map name="worldmap">
+        <area shape="circle" coords="205,130,30" href="https://en.wikipedia.org/wiki/United_States" alt="USA" target="_blank">
+        <area shape="circle" coords="795,132,29" href="https://en.wikipedia.org/wiki/Japan" alt="Japan" target="_blank">
+        <area shape="rect" coords="291,227,350,265" href="https://en.wikipedia.org/wiki/Brazil" alt="Brazil" target="_blank">
+        <area shape="rect" coords="426,90,481,124" href="https://en.wikipedia.org/wiki/France" alt="France" target="_blank">
+        <area shape="poly" coords="607,146,683,146,691,177,660,204,614,190" href="https://en.wikipedia.org/wiki/India" alt="India" target="_blank">
+        <area shape="poly" coords="743,267,814,269,830,295,812,321,759,320,741,295" href="https://en.wikipedia.org/wiki/Australia" alt="Australia" target="_blank">
+        <area shape="default" href="https://en.wikipedia.org/wiki/Earth" alt="Earth" target="_blank">
     </map>
 
-    <h2>Country links</h2>
-    <p>The same destinations are available as text links:</p>
+    <h2>Countries</h2>
     <ul>
-      <li><a href="https://en.wikipedia.org/wiki/United_States" target="_blank" rel="noopener noreferrer">United States</a> — circle</li>
-      <li><a href="https://en.wikipedia.org/wiki/Japan" target="_blank" rel="noopener noreferrer">Japan</a> — circle</li>
-      <li><a href="https://en.wikipedia.org/wiki/Brazil" target="_blank" rel="noopener noreferrer">Brazil</a> — rectangle</li>
-      <li><a href="https://en.wikipedia.org/wiki/France" target="_blank" rel="noopener noreferrer">France</a> — rectangle</li>
-      <li><a href="https://en.wikipedia.org/wiki/India" target="_blank" rel="noopener noreferrer">India</a> — polygon</li>
-      <li><a href="https://en.wikipedia.org/wiki/Australia" target="_blank" rel="noopener noreferrer">Australia</a> — polygon</li>
-      <li><a href="https://en.wikipedia.org/wiki/Earth" target="_blank" rel="noopener noreferrer">Other area: Earth</a> — default</li>
+        <li><a href="https://en.wikipedia.org/wiki/United_States" target="_blank">USA</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Brazil" target="_blank">Brazil</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/France" target="_blank">France</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/India" target="_blank">India</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Japan" target="_blank">Japan</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Australia" target="_blank">Australia</a></li>
     </ul>
 
-    <p class="note"><strong>How it works:</strong> The <code>&lt;img&gt;</code> uses a <code>&lt;map&gt;</code>. Each <code>&lt;area&gt;</code> has a shape, coordinates, an external link, alt text, and <code>target="_blank"</code>. The default area comes last and catches clicks outside the six country regions.</p>
-    
-  </main>
+    <p>Map made using Natural Earth geographical data.</p>
+
 </body>
 </html>

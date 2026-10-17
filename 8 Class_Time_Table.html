@@ -1,98 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Class Time Table</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #eef4f8;
-      color: #253343;
-      margin: 30px;
-    }
-    h1 { text-align: center; color: #1d5874; }
-    p { text-align: center; }
-    .table-scroll { overflow-x: auto; }
-    table {
-      width: 100%;
-      min-width: 850px;
-      background-color: white;
-      border-color: #91a9b6;
-      text-align: center;
-    }
-    caption { font-size: 20px; font-weight: bold; padding: 12px; }
-    th { background-color: #1d5874; color: white; }
-    td { background-color: #f7fbfd; }
-    .cst, .bcps { background-color: #64e96a; }
-    .maths { background-color: #f1c9ee; }
-    .programming { background-color: #cdf3ce; }
-    .assessment { background-color: #78c7f5; }
-    .empty { background-color: #ffffff; }
-    small { display: block; color: #43515c; }
-    th small { color: white; }
-  </style>
+    <title>Class Time Table</title>
 </head>
 <body>
-  <h1>Class Time Table</h1>
-  <p>BCA1E (AI &amp; ML) · Room TG-011</p>
+    <h1>Class Time Table</h1>
+    <p>BCA1E (AI &amp; ML) - Room TG-011</p>
 
-  <div class="table-scroll">
-    <table border="1" cellpadding="12" cellspacing="3">
-      <caption>Weekly Class Schedule</caption>
-      <tr>
-        <th scope="col">Day</th>
-        <th scope="col">Period 1<small>4:10–5:00</small></th>
-        <th scope="col">Period 2<small>5:00–5:50</small></th>
-        <th scope="col">Period 3<small>5:50–6:40</small></th>
-        <th scope="col">Period 4<small>6:40–7:30</small></th>
-        <th scope="col">Period 5<small>7:30–7:50</small></th>
-        <th scope="col">Period 6<small>7:50–8:40</small></th>
-        <th scope="col">Period 7<small>8:40–9:20</small></th>
-      </tr>
-      <tr>
-        <th scope="row">Monday</th>
-        <td class="cst">CST-I<small>NK</small></td>
-        <td class="empty">—</td>
-        <td colspan="2" class="maths">Maths for AI-I<small>LP</small></td>
-        <td class="empty">—</td>
-        <td colspan="2" class="programming">Prg-AI<small>PA</small></td>
-      </tr>
-      <tr>
-        <th scope="row">Tuesday</th>
-        <td class="cst">CST-I<small>NK</small></td>
-        <td colspan="2" class="maths">Maths for AI-I<small>LP</small></td>
-        <td class="bcps">BCPS<small>NK</small></td>
-        <td class="empty">—</td>
-        <td colspan="2" class="programming">Prg-AI<small>PA</small></td>
-      </tr>
-      <tr>
-        <th scope="row">Wednesday</th>
-        <td class="bcps">BCPS<small>NK</small></td>
-        <td class="cst">CST-I<small>NK</small></td>
-        <td colspan="2" class="assessment">BCPS Assessment<small>HS</small></td>
-        <td class="empty">—</td>
-        <td class="empty">—</td>
-        <td class="maths">Maths for AI-I<small>LP</small></td>
-      </tr>
-      <tr>
-        <th scope="row">Thursday</th>
-        <td colspan="2" class="programming">Prg-AI<small>PA</small></td>
-        <td colspan="2" class="bcps">BCPS<small>NK</small></td>
-        <td class="empty">—</td>
-        <td colspan="2" class="cst">CST-I<small>NK</small></td>
-      </tr>
-      <tr>
-        <th scope="row">Friday</th>
-        <td colspan="2" class="programming">Prg-AI<small>PA</small></td>
-        <td class="empty">—</td>
-        <td class="cst">CST-I<small>NK</small></td>
-        <td class="empty">—</td>
-        <td class="empty">—</td>
-        <td class="maths">Maths for AI-I<small>LP</small></td>
-      </tr>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Day</th>
+            <th>4:10 - 5:00</th>
+            <th>5:00 - 5:50</th>
+            <th>5:50 - 6:40</th>
+            <th>6:40 - 7:30</th>
+            <th>7:30 - 7:50</th>
+            <th>7:50 - 8:40</th>
+            <th>8:40 - 9:20</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>CST-I (NK)</td>
+            <td>-</td>
+            <td colspan="2">Maths for AI-I (LP)</td>
+            <td>-</td>
+            <td colspan="2">Prg-AI (PA)</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>CST-I (NK)</td>
+            <td colspan="2">Maths for AI-I (LP)</td>
+            <td>BCPS (NK)</td>
+            <td>-</td>
+            <td colspan="2">Prg-AI (PA)</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>BCPS (NK)</td>
+            <td>CST-I (NK)</td>
+            <td colspan="2">BCPS Assessment (HS)</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Maths for AI-I (LP)</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td colspan="2">Prg-AI (PA)</td>
+            <td colspan="2">BCPS (NK)</td>
+            <td>-</td>
+            <td colspan="2">CST-I (NK)</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td colspan="2">Prg-AI (PA)</td>
+            <td>-</td>
+            <td>CST-I (NK)</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Maths for AI-I (LP)</td>
+        </tr>
     </table>
-  </div>
-
- </body>
+</body>
 </html>
